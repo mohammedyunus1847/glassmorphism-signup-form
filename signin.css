@@ -1,0 +1,191 @@
+
+body{
+    background-image: url(starry-night-sky-background.jpg);
+    background-color: #0b0813;
+    font-family:sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  width: 180px;
+  height: 750px;
+  background: linear-gradient(135deg, #ffffff 0%, #a855f7 40%, transparent 80%);
+  transform: rotate(-40deg) translateX(-60%);
+  transform-origin: top left;
+  filter: blur(50px);
+  opacity: 0.55;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 650px;
+  height: 250px;
+  background: radial-gradient(circle, #6b21a8 0%, transparent 70%);
+  transform: translateX(-50%);
+  filter: blur(80px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+.maindiv{
+    padding: 30px 25px;
+    width: 300px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255,0.09 );
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+
+}
+div > form > h2{
+    font-weight: 800;
+    font-size: 30px;
+}
+div > form > p{
+    font-size: 10px;
+    margin-top: -15px;
+    color: rgb(226, 220, 220)
+
+}
+.namelabel{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 50;
+
+}
+.nameinput{ 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nameinputbox{
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+.emailinput{
+    display: flex;
+    flex-direction: column;
+}
+.emailinputbox{
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+.Emaillabel{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 50;
+}
+.passinput{
+    display: flex;
+    flex-direction: column;
+}
+.passlabel{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 50;
+}
+.inputpass{
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+.passp{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 50;
+    color: rgb(253, 3, 3);
+}
+.Create{
+    display: flex;
+    flex-direction: column;
+}
+.accountbutton{
+    border-radius: 8px;
+    padding: 6px;
+    color: white;
+    background-color:rgb(114, 17, 205);
+    font-size: 12px;   
+    
+}
+.googlebutton{
+    display: inline;
+    flex-direction: row; 
+    /* margin-top: 100px;  */
+}
+.googlesignup{
+    border-radius: 6px;
+    border-color: black;
+    margin-top: 7px;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    
+    
+}
+.applebutton{
+    border-radius: 6px;
+    margin-top: 7px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+
+}
+.googlelogo{
+    width:15px;
+    padding-top:4px ;
+}
+.applelogo{
+    width: 15px;
+    padding: 1px;
+
+}
+.accountbutton:hover{
+    background-color: rgb(95, 10, 180);
+    cursor: pointer;
+}
+
+.googlesignup:hover,
+.applebutton:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #7c3aed;
+}
+
+
